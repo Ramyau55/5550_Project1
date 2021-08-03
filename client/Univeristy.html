@@ -4,8 +4,9 @@
         <meta charset="UTF-8">
 
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
-        <script src="http://code.jquery.com/jquery-1.8.3.min.js" />
-        <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js" />
+        <script src="http://code.jquery.com/jquery-1.8.3.min.js" ></script>
+        <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js" ></script>
+        <script src="university.js" type="text/javascript"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -14,23 +15,22 @@
             <div data-role="content">
                 <fieldset data-role="controlgroup">
                     University Name:
-                    <input type="text" id="name" name="name">
+                    <input type="text" id="uniname" name="uniname">
                     Address:
-                    <input type="text" id="address" name="address">
+                    <input type="text" id="uniaddress" name="uniaddress">
                     Phone:
-                    <input type="tel" id="phone" name="phoneNumber">
+                    <input type="tel" id="uniphone" name="uniphone">
                 </fieldset>
-           <input type="button" onclick="save()" value="Save">
-           <input type="button" onclick="remove()" value="Delete">
+           <input type="button" onclick="add()" value="Add">
+           <input type="button" onclick="remove()" value="Remove">
             </div>
             <div data-role="content">
                 <fieldset data-role="controlgroup">
-                    Search:
                     <input type="text" id="search" name="search">
                 </fieldset>
-                <input type="button" onclick="showTable(this)"  id="0" value="Search">
+                <input type="button" onclick="displayRecords(this)"  id="0" value="Search Univerties">
 
-                <input type="button" onclick="showTable(this)" id="1"  value="Search All Universities">
+                <input type="button" onclick="displayRecords(this)" id="1"  value="Display Universities">
          </div>
 
         <div data-role="content">
