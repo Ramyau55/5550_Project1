@@ -1,4 +1,4 @@
-var SERVER_URL = 'http://dev.cs.smu.ca:9898';
+var SERVER_URL = 'http://dev.cs.smu.ca:8112';
 function add(){
  var uniname = $("#uniname").val();
  var uniaddress = $("#uniaddress").val();
